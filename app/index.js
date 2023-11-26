@@ -1,9 +1,20 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView, SafeAreaView } from "react-native";
+import { useState } from "react";
+import { Stack, useRouter } from "expo-router";
+import { COLOS, icons, images, SIZES } from "../constants";
+import {
+  Nearbyjobs,
+  Popularjobs,
+  ScreenHeaderBtn,
+  Welcome,
+} from "../components";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <View>
+    <SafeAreaView>
       <Text>Homess</Text>
-    </View>
+    </SafeAreaView>
   );
 }
